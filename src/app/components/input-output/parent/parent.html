@@ -1,0 +1,23 @@
+<h1>Composant parent </h1>
+
+<div>
+    <p>Valeur parent : {{valueParent}}</p>
+    <p>Valeur de l'enfant : {{valueFromChild}}</p>
+</div>
+
+<div class="card">
+    <app-enfant [valueFromParent]="valueParent" ></app-enfant>
+</div>
+
+<div class="p-2 parent-container">
+
+    <app-input-child (emitValue)="handleFilter($event)"></app-input-child>
+    
+    <div class="container p-2">
+        <h3>liste</h3>
+        @for (item of listFiltered; track $index) {
+            <p>{{item}}</p>
+        }
+    </div>
+
+</div>

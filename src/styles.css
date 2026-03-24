@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  font-style: italic;
+}
+
+.card{
+    width: 50%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+    margin: auto;
+    padding: 1rem;
+}

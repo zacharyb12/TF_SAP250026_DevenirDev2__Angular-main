@@ -1,0 +1,10 @@
+<p>enfant works!</p>
+
+<div>
+    <p>Valeur dans l'enfant : {{valueFromParent}}</p>
+</div>
+
+<div>
+    <input type="number" [(ngModel)]="valueToSend"/>
+    <button (click)="sendValue()">Send Value</button>
+</div>
