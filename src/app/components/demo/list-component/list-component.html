@@ -1,0 +1,11 @@
+<p>list-component works!</p>
+
+<app-input-component (emetteur)="addProduct($event)"></app-input-component>
+
+@for(p of listProduct; track $index)
+{
+    <div>
+        <h3>{{p.name}}</h3>
+        <p>{{p.description}}</p>
+    </div>
+}

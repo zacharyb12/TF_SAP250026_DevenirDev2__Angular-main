@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Enfant } from "../enfant/enfant";
 import { InputChild } from "../input-child/input-child";
+import { ModelInterface } from '../../../models/demo-interface';
+import { MyClass } from '../../../models/demo-class';
 
 @Component({
   selector: 'app-parent',
@@ -8,6 +10,7 @@ import { InputChild } from "../input-child/input-child";
   templateUrl: './parent.html',
   styleUrl: './parent.css',
 })
+
 export class Parent {
 
   // valeur transmise à l'enfant
@@ -41,4 +44,20 @@ export class Parent {
     )
   }
 
+
+  // ------------------------------------
+  listModelInterface : ModelInterface[] = [];
+
+  instanceInterface! : ModelInterface;
+
+
+  instanceClasse : MyClass = new MyClass("bob" , 35);
+
+  listModel : ModelInterface[] = [
+    {
+      nom : "",
+      text : "",
+      valeur : 0
+    }
+  ];
 }
